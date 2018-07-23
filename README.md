@@ -1,9 +1,7 @@
 # Sentiment Analysis in Amazon Customer Reviews 
-## (Spark on Databricks Community Edition)
+## (Apache Spark on Databricks Community Edition)
 
-###### |<a href='#1'> Introduction </a> | <a href='#2'> Data </a> | <a href='#3'> Preprocessing </a> | <a href='#5'> Model Accuracy </a> |
-
-###### |<a href='https://jesseqzhen.github.io/NLP_Sentiment_Analysis/'> Spark Code HTML Version </a>| 
+###### |<a href='#1'> Introduction </a> | <a href='#2'> Data </a> | <a href='#3'> Preprocessing </a> | <a href='#5'> Model Accuracy </a> |<a href='https://jesseqzhen.github.io/NLP_Sentiment_Analysis_-Spark-/'> Spark Code HTML Version </a>| 
 
 <a id='1'></a>
 ## Introduction
