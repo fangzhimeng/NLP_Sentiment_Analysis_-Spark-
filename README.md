@@ -20,7 +20,7 @@ Reviews with overall rating of 1, 2, or 3 are labeled as negative ("neg"), and r
 * positive: 829,277 reviews (84.4%)
 * negative: 153,342 reviews (15.6%)
 
-We only sample a small portion of the data for demonstration and try to balance the two classes. After sampling, we have 
+We only sample a small portion (8%) of the data for demonstration and try to balance the two classes. After sampling, we have 
 
 * positive: 41,226 reviews (51.7%)
 * negative: 38,542 reviews (48.3%)
