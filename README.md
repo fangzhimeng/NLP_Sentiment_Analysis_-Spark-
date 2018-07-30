@@ -1,7 +1,7 @@
 # Sentiment Analysis in Amazon Customer Reviews 
 ## (Apache Spark on Databricks Community Edition)
 
-###### |<a href='#1'> Introduction </a> | <a href='#2'> Data </a> | <a href='#3'> Preprocessing </a> | <a href='#5'> Model Accuracy </a> |<a href='https://jesseqzhen.github.io/NLP_Sentiment_Analysis_-Spark-/'> Spark Code HTML Version </a>| 
+###### |<a href='#1'> Introduction </a> | <a href='#2'> Data </a> | <a href='#3'> Preprocessing </a> | <a href='#5'> Model Accuracy </a> |<a href='https://jasonqzhen.github.io/NLP_Sentiment_Analysis_-Spark-/'> Spark Code HTML Version </a>| 
 
 <a id='1'></a>
 ## Introduction
@@ -20,7 +20,10 @@ Reviews with overall rating of 1, 2, or 3 are labeled as negative ("neg"), and r
 * positive: 829,277 reviews (84.4%)
 * negative: 153,342 reviews (15.6%)
 
-Since the dataset is imbalanced that more than 84% of the reviews are positive, we undersample the positive reviews (the majority class) to have a balanced dataset.
+We only sample a small portion of the data for demonstration and try to balance the two classes. After sampling, we have 
+
+* positive: 41,226 reviews (51.7%)
+* negative: 38,542 reviews (48.3%)
 
 
 
@@ -32,7 +35,9 @@ The following steps are used to preprocess data:
 * Use HTMLParser to un-escape the text
 * Change "can't" to "can not", and change "n't" to "not" (This is useful for the later negation handling process)
 * Pad punctuations with white spaces
-* Lowercase and tokenize every word 
+* Lowercase every word 
+* Word tokenization
+* Word lemmatization
 * Perform **negation handling**
    * Use a state variable to store the negation state
    * Transform a word followed by a "not" or "no" into “not_” + word
@@ -42,11 +47,11 @@ The following steps are used to preprocess data:
 
 
 <a id='5'></a>
-## Model accuracy
+## Model accuracy (without parameter tuning)
 
-* Naive Bayes: 86.14%
-* Logistic regression: 86.75%
-* Linear SVC: 86.99%
+* Naive Bayes: 85.53%
+* Logistic regression: 86.10%
+* Linear SVC: 86.56%
 
 
 
