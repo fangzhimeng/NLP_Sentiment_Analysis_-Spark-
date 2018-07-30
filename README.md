@@ -6,7 +6,7 @@
 <a id='1'></a>
 ## Introduction
 
-This project uses the customer review data from Amazon.com to perform a supervised binary (positive or negative) sentiment classification analysis. We use various data pre-processing techniques in improving the classification. We also compare three machine learning models, namely, the Naive Bayes model, the Logistic regression model, and the linear support vector classification model.  
+This project uses the customer review data from Amazon.com to perform a supervised binary (positive or negative) sentiment classification analysis. We use various data pre-processing techniques and three machine learning models, namely, the Naive Bayes model, the Logistic regression model, and the linear support vector classification model.  
 
 The result provides 87% prediction accuracy. 
 
