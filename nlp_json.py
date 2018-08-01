@@ -318,7 +318,7 @@ print("Accuracy of the model: {}".format(acc_lsvc))
 # MAGIC 
 # MAGIC The suffixes "_1", "_2", ..., "_5" indicate the real overall review stars 1, 2, ..., 5.
 # MAGIC 
-# MAGIC The model currectly predicts the first three reviews as "negative" (label=1), and the last two as "positive" (label=0).
+# MAGIC The model correctly predicts the first three reviews as "negative" (label=1), and the last two as "positive" (label=0).
 
 # COMMAND ----------
 
